@@ -12,7 +12,7 @@ void check (int &direction);
 void directionn(int direction, int &pastCounter, int past[][2]);
 void apple (int &apples, char main[][75]);
 void quitGame (int score);
-
+//this main body 
 int main()
 {
     int past[1000][2];
@@ -23,11 +23,11 @@ int main()
     int apples = 0;
     int score = 0;
     int quit = 0;
-    int playAgain = 1;
+    int playAgain = +1;
     unsigned time;
     srand(time(0));
 
-    for (int x = 0; x < 1000; x ++)
+    for (int x = 0; x < 100; x ++)
     {
         for (int y = 0; y < 2; y ++)
         {
@@ -69,8 +69,8 @@ void draw(char main[][75], int score)
     }
 
 }
-
-void reset(char main[][75])
+//its reset fuction 
+void reset(char main[][50])
 {
     for (int x = 0; x < 23; x++)
         {
@@ -165,6 +165,8 @@ void directionn(int direction, int &pastCounter, int past[][2])
         down --;
         break;
     case 3:
+        down ++;
+            ase 4:
         down ++;
     }
 
